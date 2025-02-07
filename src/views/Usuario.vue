@@ -23,7 +23,7 @@
 
                 <select v-model="fEstado" @change="filtrarUsuarios"
                     class="border border-gray-300 rounded-lg px-3 py-2 w-1/2 text-sm">
-                    <option value="">Seleccione Estado</option>
+                    <option value="">Seleccionar Estado</option>
                     <option value="activo" class="text-sm">ACTIVO</option>
                         <option value="inactivo" class="text-sm">INACTIVO</option>
                 </select>

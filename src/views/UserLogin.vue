@@ -2,12 +2,12 @@
   <div class="flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(https://powergroupsystem.com/cliente/img/background/grifo.jpg);">
     <div class="bg-white p-4 rounded-[25px] shadow-md w-full max-w-md">
 
-      <div class="w-full flex items-center justify-center">
-        <img src="../assets/LOGO-PAG.png" alt="Logo" class="h-18 mb-15">
+      <div class="w-full flex items-center justify-center mb-6">
+        <img src="../assets/LOGO-PAG.png" alt="Logo" class="h-[70px] mb-[20px] mt-[20px]">
       </div>
 
       <form @submit.prevent="handleLogin">
-      <!----  <label for="codigo" class="block text-xl font-bold text-black text-center mb-4">Bienvenidos</label>-->
+      <!-- <label for="codigo" class="block text-xl font-bold text-black text-center mb-4">Bienvenidos</label>-->
 
         <div class="grid grid-cols-1 gap-4 mb-4">
           <div>

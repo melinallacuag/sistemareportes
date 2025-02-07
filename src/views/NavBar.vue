@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full flex relative">
+  <div class="w-full h-full flex relative bg-black">
     <div v-if="showSide && isMobile" class="fixed inset-0  bg-opacity-50 z-10" @click="toggleSideBar"></div>
     <div class="w-[280px] h-full bg-gray-200 text-white
         transition-transform transform md:relative fixed md:static top-0 left-0 z-20" :class="{
