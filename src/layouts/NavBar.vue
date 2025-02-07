@@ -167,13 +167,13 @@ export default {
       const userRole = atob(localStorage.getItem('rol'));
       const roleBasedRoutes = {
         ADMINISTRADOR: [
-          { path: "dashboard", name: "Dashboard", component: UserDashboard },
-          { path: "usuario", name: "Maestra de Usuario", component: Usuario },
-          { path: "reportes", name: "Reportes", component: Reportes },
+          { path: "/", name: "Dashboard", component: UserDashboard },
+          { path: "/usuario", name: "Maestra de Usuario", component: Usuario },
+          { path: "/reportes", name: "Reportes", component: Reportes },
         ],
         CLIENTE: [
-          { path: "dashboard", name: "Dashboard", component: UserDashboard },
-          { path: "reportes", name: "Reportes", component: Reportes },
+          { path: "/", name: "Dashboard", component: UserDashboard },
+          { path: "/reportes", name: "Reportes", component: Reportes },
         ],
       };
       this.accessibleRoutes = roleBasedRoutes[userRole] || [];
@@ -187,7 +187,7 @@ export default {
     if (isLoggedIn !== "true") {
       this.$router.push("/login");
     } else {
-      this.$router.replace("/dashboard");
+      this.$router.replace("/");
     }
 
     this.updateScreenSize();

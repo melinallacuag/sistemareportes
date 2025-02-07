@@ -143,7 +143,7 @@ export default {
           localStorage.setItem("nombre", response.data.r2);
           localStorage.setItem("token", response.data.r4);
           localStorage.setItem("rol", response.data.r5);
-          this.$router.push("/dashboard");
+          this.$router.replace("/");
         } else {
           this.mostrarNotificacionError('Credenciales incorrectas o inactivas.', () => { });
         }
@@ -162,7 +162,7 @@ export default {
   mounted() {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     if (isLoggedIn === "true") {
-      this.$router.push("/dashboard");
+      this.$router.push("/");
     } else {
       this.$router.replace("/login");
     }
