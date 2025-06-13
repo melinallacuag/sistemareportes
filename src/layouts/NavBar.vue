@@ -6,13 +6,13 @@
           '-translate-x-full': !showSide && isMobile,
           'translate-x-0': showSide || !isMobile
         }">
-      <div class="h-[80px] w-full bg-[#000000] flex justify-center items-center relative">
+      <div class="h-[60px] w-full bg-[#000000] flex justify-center items-center relative">
         <div class="px-[20px] mb-2 mt-2">
           <img src="../assets/LOGO-PAG-BLANCO.png" alt="" class="h-[50px]">
         </div>
         <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[80%] h-[0.2px] bg-[#fff]"></div>
       </div>
-      <div class="h-[calc(100vh-50px)] bg-[#000000] py-[20px]">
+      <div class="h-[calc(100vh-60px)] bg-[#000000] py-[20px] overflow-hidden">
         <div class="flex flex-col justify-start h-full px-[20px] space-y-[10px]">
           <div class=" flex flex-col justify-between space-y-[10px]">
             <template v-for="route in accessibleRoutes" :key="route.name">
@@ -75,7 +75,7 @@
           </div>
         </div>
       </div>
-      <div class="h-[calc(100vh-0px)] p-[20px] bg-cover bg-center bg-no-repeat"
+      <div class="h-[calc(100vh-60px)] p-[20px] overflow-auto bg-cover bg-center bg-no-repeat"
         style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(https://powergroupsystem.com/cliente/img/background/grifo.jpg);">
         <router-view></router-view>
       </div>
@@ -89,6 +89,7 @@ import api from "../services/api";
 import Usuario from "../views/Usuario.vue";
 import Reportes from "../views/Reportes.vue";
 import UserDashboard from "../views/Dashboard.vue";
+import ReportesTurno from "../views/ReportesTurno.vue";
 
 export default {
   name: "NavBarComponent",
@@ -170,6 +171,7 @@ export default {
           { path: "/", name: "Dashboard", component: UserDashboard },
           { path: "/usuario", name: "Maestra de Usuario", component: Usuario },
           { path: "/reportes", name: "Reportes", component: Reportes },
+          { path: "/reportesTurno", name: "Reportes Turno", component: ReportesTurno },
         ],
         CLIENTE: [
           { path: "/", name: "Dashboard", component: UserDashboard },

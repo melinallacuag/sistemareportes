@@ -7,4 +7,7 @@ export default defineConfig({
   server: {
     historyApiFallback: true,
   },
-})
+  define: {
+    'process.env': {}
+  }
+})  
