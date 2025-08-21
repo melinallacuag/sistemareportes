@@ -8,6 +8,7 @@ import CrearUsuario from "../views/CrearUsuario.vue";
 import PerfilUsuario from "../views/PerfilUsuario.vue";
 import NavBarComponent  from "../layouts/NavBar.vue";
 import ReportesTurno from "../views/ReportesTurno.vue";
+import ConsolidadoTurno from "../views/ConsolidadoTurno.vue";
 
 export const  router = createRouter({
   history: createMemoryHistory(import.meta.env.BASE_URL),
@@ -41,6 +42,11 @@ export const  router = createRouter({
           path: "/reportesTurno",
           name: "ReportesTurno",
           component: ReportesTurno,
+        },
+          {
+          path: "/consolidadoTurno",
+          name: "ConsolidadoTurno",
+          component: ConsolidadoTurno,
         },
         {
           path: '/editar-usuario',

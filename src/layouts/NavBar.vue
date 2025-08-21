@@ -90,6 +90,7 @@ import Usuario from "../views/Usuario.vue";
 import Reportes from "../views/Reportes.vue";
 import UserDashboard from "../views/Dashboard.vue";
 import ReportesTurno from "../views/ReportesTurno.vue";
+import ConsolidadoTurno from "../views/ConsolidadoTurno.vue";
 
 export default {
   name: "NavBarComponent",
@@ -172,6 +173,7 @@ export default {
           { path: "/usuario", name: "Maestra de Usuario", component: Usuario },
           { path: "/reportes", name: "Reportes", component: Reportes },
           { path: "/reportesTurno", name: "Reportes Turno", component: ReportesTurno },
+            { path: "/consolidadoTurno", name: "Consolidado Turno", component: ConsolidadoTurno },
         ],
         CLIENTE: [
           { path: "/", name: "Dashboard", component: UserDashboard },
